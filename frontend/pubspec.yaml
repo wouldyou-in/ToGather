@@ -1,0 +1,55 @@
+name: togather
+description: togather's mobile / web frontend
+
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  persistent_bottom_nav_bar: ^4.0.2
+  flutter_switch: ^0.3.2
+  syncfusion_flutter_datepicker: ^19.3.55
+  syncfusion_flutter_charts: ^19.3.55
+  http: ^0.13.4
+  get: ^4.3.8
+  percent_indicator: ^3.4.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+  flutter_native_splash: ^1.3.1
+
+flutter:
+
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: one-mobile
+      fonts:
+        - asset: assets/fonts/ONEMobileRegular.ttf
+        - asset: assets/fonts/ONEMobileBold.ttf
+          weight: 700
+        - asset: assets/fonts/ONEMobileLight.ttf
+          weight: 300
+        
+    - family: one-mobile-title
+      fonts:
+        - asset: assets/fonts/ONEMobileTitle.ttf
+
+flutter_native_splash:
+
+  color: "#FFFFFF"
+  color_dark: "#FFFFFF"
+  fullscreen: true
+  image: assets/images/splash_logo.png
